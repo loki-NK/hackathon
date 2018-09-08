@@ -5,43 +5,39 @@
     <title></title>
   </head>
   <body>
-    <style>
-  .bordered {
-    width: 80%;
-    height: 100px;
-    padding: 20px;
-    border: 2px solid black;
-  }
-</style>
-
     <h1 align="center">CTRL ALT ELITE'S VideoChat</h1>
     <br/>
     <br/>
-    <label>Second user's Gmail id:</label><br/>
-    <textarea id="gmail"></textarea><br/>
-    <button id="send">send</button><br/>
-    <br/>
-    <br/>
-    <div class="bordered">
-    <label>Your ID:</label><br/>
-    <textarea id="yourId" "></textarea><br/>
-    <label>Other ID:</label><br/>
-    <textarea id="otherId" placeholder="Check your mail and paste the SDP received"></textarea>
-    <button id="connect">connect</button><br/>
-    </div>
-    <br/>
-    <br/>
-    <table style="width:80%" border="1">
+    <table style="width:50%" border="1" align="center">
+     <tr>
+    <th><label>Your ID:</label></th><br/>
+    <th><label>Other ID:</label></th><br/>
+    </tr>
+    <tr>
+    <td><textarea id="yourId" rows="5" cols="30"></textarea></td><br/>
+    <td><textarea id="otherId" placeholder="Paste the SDP received" rows="5" cols="30"></textarea></td><br/>
+    </tr>
+    <br/>
+</table>
+  <br/>
+<div style="text-align: center;">
+      <button id="connect" style="width:20%" >connect</button><br/>
+      </div>
+ <table style="width:80%" border="1" align="center">
     <tr>
-    <th>Enter Message:</th><br/>
-    <th>Received Messages:</th><br/>
+    <th>Enter Message:</th></br>
+    <th>Received Messages:</th></br>
     </tr>
     <tr>
-    <td><textarea id="yourMessage" ></textarea></td></br>
-    <td><textarea id="Received"></textarea></td></br>
+    <td><textarea id="yourMessage" cols ="40"></textarea></td></br>
+    <td><textarea id="Received" rows="10" cols="40"></textarea></td></br>
     </tr>
-    </table>
-    <button id="send">send</button></br>
-    <script src="bundle.js" charset="utf-8"></script>
+    </br>
+</table>
+</br>
+<div style="text-align: center;">
+  <button id="send" style="width:20%">send</button></br>
+</div>
+  <script src="bundle.js" charset="utf-8"></script>
   </body>
 </html>
