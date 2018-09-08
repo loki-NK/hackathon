@@ -1,5 +1,4 @@
 var getUserMedia = require('getusermedia')
-var nodemailer = require('nodemailer')
 
 getUserMedia({ video: true, audio: true }, function (err, stream) {
   if (err) return console.error(err)
